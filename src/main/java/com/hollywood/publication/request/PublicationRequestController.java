@@ -1,4 +1,4 @@
-package com.hollywood.publication;
+package com.hollywood.publication.request;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -28,6 +28,12 @@ public class PublicationRequestController {
 	public ResponseEntity<Void> createDesignRequest(@PathVariable String designNumber) throws URISyntaxException {
 		pubService.createRequest(designNumber);
 		return ResponseEntity.created(new URI("/publication/request/design/" + designNumber)).build();
+	}
+	
+	@RequestMapping(value = "/design/{designNumber}", method = RequestMethod.GET)
+	public ResponseEntity<PublicationRequest> getDesignRequest(@PathVariable String designNumber) throws URISyntaxException {
+		PublicationRequest pr = pubService.get(designNumber);
+		return ResponseEntity.ok(pr);
 	}
 
 	@RequestMapping(value = "/design/pending", method = RequestMethod.GET)

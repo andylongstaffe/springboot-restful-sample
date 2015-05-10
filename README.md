@@ -16,3 +16,16 @@ Rest api exposed
 1) GET greeting
 
 2) customer stuff in progress..
+
+Testing using curl
+
+$ curl -i -X POST -H "Content-Type:application/json" -d '{  "firstName" : "Frodo",  "lastName" : "Baggins" }' http://localhost:8080/people
+
+-i: include response headers
+-d: data
+
+
+Changes
+
+* Added h2 database to classpath
+* Spring xxx for hot debugging of the spring boot app

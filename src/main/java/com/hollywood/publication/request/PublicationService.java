@@ -1,6 +1,5 @@
-package com.hollywood.publication;
+package com.hollywood.publication.request;
 
-import java.util.List;
 import java.util.Set;
 
 public interface PublicationService {

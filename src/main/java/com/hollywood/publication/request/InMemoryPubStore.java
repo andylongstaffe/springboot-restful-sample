@@ -1,4 +1,4 @@
-package com.hollywood.publication;
+package com.hollywood.publication.request;
 
 import java.util.HashMap;
 import java.util.HashSet;
