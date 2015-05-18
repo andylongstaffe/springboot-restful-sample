@@ -1,4 +1,4 @@
-package com.hollywood.publication.bulletin;
+package com.hollywood.publication.bulletin.impl;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.hollywood.publication.bulletin.BulletinService;
 
 @RestController
 @RequestMapping("bulletin")
