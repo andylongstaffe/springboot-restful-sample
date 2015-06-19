@@ -37,5 +37,8 @@ public class DesignsDossier {
 	}
 	public void setRegistrationDate(Date registrationDate) {
 		this.registrationDate = registrationDate;
-	}	
+	}
+	public String getSummary() {
+		return classification + " - " + description;
+	}
 }
