@@ -1,10 +1,8 @@
 package com.hollywood.publication.external.domain;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement
 public class DesignsDossier {

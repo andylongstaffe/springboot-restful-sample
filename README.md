@@ -1,3 +1,5 @@
+// https://spring.io/guides/gs/consuming-rest-jquery/
+
 1) Take a look at what the various spring boot (starter) libs give you, eg - web, test, data-rest, data-jpa
 
 2) Tutorial not finished yet

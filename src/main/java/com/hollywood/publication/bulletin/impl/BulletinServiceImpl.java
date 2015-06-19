@@ -3,6 +3,7 @@ package com.hollywood.publication.bulletin.impl;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.hollywood.publication.bulletin.Bulletin;
 import com.hollywood.publication.bulletin.BulletinItem;
@@ -13,6 +14,7 @@ import com.hollywood.publication.external.service.DossierService;
 import com.hollywood.publication.request.PublicationRequest;
 import com.hollywood.publication.request.PublicationService;
 
+@Service
 public class BulletinServiceImpl implements BulletinService {
 
 	@Autowired
