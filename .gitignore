@@ -2,3 +2,6 @@ target
 .project
 .classpath
 .settings
+/test-bulletin.html
+/test-output.xml
+/test-velocity-bulletin.html

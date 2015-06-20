@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel='stylesheet'
+	href='webjars/bootstrap/3.2.0/css/bootstrap.min.css'>
+
+</head>
+<body>
+	<div class="container">
+		<h1>Publication Test Page</h1>
+		<label for="app_number">App Number</label> <input type='text'
+			id='app_number' />
+		<button class="btn btn-primary" id="btnPubRequest">Request Publication</button>
+	</div>
+	<div class="container">
+		<h2>Pending Requests</h2>
+		<button class="btn btn-default" id="btnRefresh">Refresh</button>
+		<table id='pending_requests' class="table">
+			<thead>
+				<tr>
+					<th>Application Number</th>
+					<th>Date requested</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+
+		<div id="result"></div>
+	</div>
+	<div class="container">
+		<!-- 
+		
+		1. Generate journal
+		<button class="btn btn-primary" id="btnGenerateJournal">Generate Journal</button> Asynchronous request to generate a journal.
+		Something to check on status of generation might be good?
+		
+		2. View journal - as a link, maybe offer list of available journals
+		<button class="btn btn-primary" id="btnViewJournal">View Journal</button> Pull journal from content repo 
+		
+		3. Hyperlink preview of each case? (like a mini journal!)
+		-->		
+	</div>
+	<script type="text/javascript"
+		src="webjars/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript"
+		src="webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="pub.js"></script>
+</body>
+</html>
